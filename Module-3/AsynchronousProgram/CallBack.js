@@ -24,10 +24,17 @@ greet(() => console.log("Hi"));
 
 //======================================================//
 
-function x(y) {
-    console.log("First");
-    y();
+// function x(y) {
+//     console.log("First");
+//     y();
+// }
+// x(() => {
+//     console.log("Second");
+// });
+
+console.log("Hi");
+function callback() {
+    console.log("budy");
 }
-x(() => {
-    console.log("Second");
-});
+setTimeout(callback, 2000);
+console.log("WellCome");
