@@ -1,3 +1,8 @@
+//what is Promise
+/**
+ * The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+ */
+
 //======== Promise resolve ========
 
 var promise = new Promise((resolve, reject) => {
