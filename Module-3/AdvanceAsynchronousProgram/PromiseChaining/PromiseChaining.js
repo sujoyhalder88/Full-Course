@@ -12,28 +12,12 @@
 //     return result * 3;
 // });
 
-//===================== fetch async/await========================
-const formSubmit = async (newBag) => {
-    const response = await fetch("http://localhost:3000/bags", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newBag),
-    });
-    const newBag1 = await response.json();
-    setBags([...bags, newBag1]);
-};
-
-//===========fetch==============
-const aThing = fetch("http://restcountries.eu/rest/v2/all", {})
+//===================fetch method===============
+const fetchPromise = fetch("https://ghibliapi.herokuapp.com/people");
+fetchPromise
     .then((response) => {
         return response.json();
     })
-    .then((data) => {
-        console.log(data);
+    .then((people) => {
+        console.log(people);
     });
-console.log(aThing);
-setTimeout(() => {
-    console.log(aThing);
-}, 1000);
