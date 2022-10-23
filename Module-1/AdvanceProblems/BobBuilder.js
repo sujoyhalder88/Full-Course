@@ -13,9 +13,9 @@
  */
 
 function constructWall(l, h, t) {
-    let noOfBricks = Math.ceil((0.85 * l * h * t * Math.pow(100, 3)) / 2304);
-    console.log(
-        `Number of bricks needed to construct the wall is: ${noOfBricks}`
-    );
+  let noOfBricks = Math.ceil((0.85 * l * h * t * Math.pow(100, 3)) / 2304);
+  console.log(
+    `Number of bricks needed to construct the wall is: ${noOfBricks}`
+  );
 }
 constructWall(24, 8, 0.6);

@@ -11,17 +11,17 @@
  */
 
 function printFrequencyElement(str, char) {
-    let mp = {};
-    for (let i = 0; i < str.length; i++) {
-        if (!mp[str[i]]) {
-            mp[str[i]] = 1;
-        } else {
-            mp[str[i]] += 1;
-        }
+  let mp = {};
+  for (let i = 0; i < str.length; i++) {
+    if (!mp[str[i]]) {
+      mp[str[i]] = 1;
+    } else {
+      mp[str[i]] += 1;
     }
-    for (let key in mp) {
-        if (key === char) mp = mp[key];
-    }
-    return mp;
+  }
+  for (let key in mp) {
+    if (key === char) mp = mp[key];
+  }
+  return mp;
 }
 console.log(printFrequencyElement("unacademy", "a"));
