@@ -27,3 +27,37 @@ let k = 3;
 arr = kthElement(arr, k);
 console.log(arr);
 console.log(arr[arr.length - k]);
+
+//=============================================================
+/**
+ * Give an array of name of country, you are supposed to sort it in lexicographical order using the bubble sort
+
+    Input : [“India”,”Australia”,”China”,”Russia”,”Brazil”,”Japan”]
+    Output: [”Australia”,”Brazil”,”China”,“India”,”Japan”,”Russia”]
+ */
+
+function printLexicographicalOrder(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let isSwap = false;
+    for (let j = 0; j < arr.length - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+        isSwap = true;
+      }
+    }
+    if (!isSwap) break;
+  }
+  return arr;
+}
+console.log(
+  printLexicographicalOrder([
+    "India",
+    "Australia",
+    "China",
+    "Russia",
+    "Brazil",
+    "Japan",
+  ])
+);
