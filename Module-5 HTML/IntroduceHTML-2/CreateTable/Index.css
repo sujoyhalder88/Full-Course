@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 2px solid blue;
+  width: max-content;
+  margin: 10px 10px;
+  padding: 20px 20px;
+  background-color: aquamarine;
+}
+
+table,
+th,
+td {
+  font-size: larger;
+  border: 1px solid black;
+}
+
+table {
+  margin-top: 2%;
+}
+
+th {
+  background-color: grey;
+  color: crimson;
+}
