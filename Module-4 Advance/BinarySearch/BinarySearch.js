@@ -15,4 +15,4 @@ function binerySearch(arr, x) {
   }
   return undefined;
 }
-console.log(binerySearch([4, 3, 2, 1, 5, 6, 8, 9, 15], 2));
+console.log(binerySearch([4, 3, 2, 1, 5, 6, 8, 9, 15], 5));
